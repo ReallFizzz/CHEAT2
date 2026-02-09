@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "knockbacktrainer",
+  "version": "${version}",
+  "name": "Knockback Trainer",
+  "description": "A mod to control knockback direction by rotating player head before attack",
+  "authors": [
+    "KnockbackTrainer Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/knockbacktrainer/knockbacktrainer",
+    "sources": "https://github.com/knockbacktrainer/knockbacktrainer"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.knockbacktrainer.KnockbackTrainer"
+    ],
+    "modmenu": [
+      "dev.knockbacktrainer.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "knockbacktrainer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=11.0.0"
+  }
+}
